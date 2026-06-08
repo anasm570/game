@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🚀 Space Rescue | لعبة إنقاذ الفضاء</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <div class="hud">
+            <div class="score">⭐ <span id="scoreValue">0</span></div>
+            <div class="fuel">⛽ الوقود: <span id="fuelValue">100</span>%</div>
+            <div class="health">❤️ الصحة: <span id="healthValue">3</span></div>
+            <div class="highscore">🏆 أفضل: <span id="highscoreValue">0</span></div>
+        </div>
+        <div class="controls">
+            <button id="resetBtn">🔄 إعادة التشغيل</button>
+        </div>
+        <div class="touch-controls">
+            <div class="touch-btn" id="leftBtn">◀</div>
+            <div class="touch-btn" id="rightBtn">▶</div>
+            <div class="touch-btn" id="boostBtn">⚡</div>
+        </div>
+        <div class="instructions">⌨️ ← → للتحريك | ⬆️ دفعة سرعة | اضغط الشاشة للعب</div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

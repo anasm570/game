@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "routes": [
+    { "src": "/style.css", "dest": "/style.css" },
+    { "src": "/game.js", "dest": "/game.js" },
+    { "src": "/config.json", "dest": "/config.json" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

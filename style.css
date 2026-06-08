@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: radial-gradient(circle at 20% 40%, #03071e, #000000);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', 'Poppins', 'Orbitron', monospace;
+    padding: 20px;
+}
+
+.game-container {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    border-radius: 48px;
+    padding: 20px;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    border-radius: 28px;
+    background: #010418;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    width: 100%;
+    height: auto;
+    cursor: none;
+}
+
+.hud {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 8px 20px;
+    border-radius: 60px;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+.hud div {
+    background: #000000aa;
+    padding: 4px 12px;
+    border-radius: 40px;
+    font-size: 1rem;
+}
+
+button {
+    background: #e67e22;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.1s;
+    color: white;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.touch-controls {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.touch-btn {
+    background: rgba(0, 255, 255, 0.2);
+    border: 2px solid cyan;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: 0.05s;
+}
+
+.touch-btn:active {
+    background: cyan;
+    color: black;
+    transform: scale(0.95);
+}
+
+.instructions {
+    font-size: 0.7rem;
+    color: #88aacc;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .game-container { padding: 12px; }
+    .hud div { font-size: 0.8rem; padding: 2px 10px; }
+    .touch-btn { width: 50px; height: 50px; font-size: 22px; }
+}

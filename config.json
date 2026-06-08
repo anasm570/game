@@ -1,0 +1,8 @@
+{
+    "starSpeed": 2,
+    "asteroidSpeed": 3.2,
+    "fuelCellSpeed": 2.5,
+    "asteroidSpawnRate": 55,
+    "fuelSpawnRate": 130,
+    "boostPower": 8
+}
